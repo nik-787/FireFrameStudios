@@ -1,94 +1,68 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FireFrame Studios</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start; /* Anpassung für die Überschrift */
-            align-items: center;
-            min-height: 100vh; /* Mindesthöhe auf 100% der sichtbaren Höhe des Viewports setzen */
-            margin: 0;
-            font-family: 'Kalam', cursive;
-            font-weight: bold;
-        }
-        h1 {
-            margin-top: 0; /* Abstand entfernen */
-            font-size: 2em; /* Beispiel für größere Schriftgröße */
-        }
-        nav {
-            width: 100%;
-            text-align: center;
-            padding: 20px;
-            background-color: lightgray; /* Hintergrundfarbe hinzufügen */
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin-right: 20px;
-        }
-        main {
-            text-align: center; /* Text im Hauptbereich zentrieren */
-            padding: 20px;
-            margin-top: 20px; /* Abstand zwischen Navigation und Hauptbereich */
-            margin-bottom: auto; /* Abstand zwischen Hauptbereich und Footer */
-        }
-        footer {
-            width: 100%;
-            text-align: center;
-            padding: 20px;
-            background-color: gray; /* Hintergrundfarbe für den Footer */
-        }
-        footer ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center; /* Ändern Sie dies auf justify-content: center */
-        }
-        footer ul li {
-            margin-right: 20px; /* Abstand zwischen den Elementen im Footer */
-        }
-    </style>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5X292NMP');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FireFrameStudios</title>
 </head>
 <body>
-    <h1>FireFrame Studios</h1>
-    <nav>
-        <ul>
-            <li><a href="#home" onclick="showHomeMessage()">Home</a></li>
-            <li><a href="#about" onclick="showAboutMessage()">Über uns</a></li>
-            <li><a href="#contact" onclick="showContactMessage()">Kontakt</a></li>
-        </ul>
-    </nav>
-    <main>
-        <p>FireFrame Studios ist ein renommiertes Animationsstudio, das sich auf die Erstellung hochwertiger Animationen für verschiedene Medienplattformen spezialisiert hat. Mit einem talentierten Team von Künstlern, Animatoren und Technikern arbeitet das Studio daran, fesselnde visuelle Erlebnisse zu schaffen, die Geschichten zum Leben erwecken und das Publikum begeistern.</p>
-        <p>Auf der Webseite von FireFrame Studios können Besucher eine Vielzahl von Informationen und Ressourcen erkunden. Von einem beeindruckenden Portfolio bis hin zu detaillierten Informationen über Dienstleistungen und das Team bietet die Webseite eine umfassende Plattform, um mehr über das Studio und seine Arbeit zu erfahren. Besucher können sich auch über aktuelle Neuigkeiten und Branchentrends informieren sowie Kontaktmöglichkeiten nutzen, um mit dem Studio in Verbindung zu treten und mögliche Zusammenarbeiten zu erkunden.</p>
-    </main>
-    <footer>
-        <ul>
-            <li><a href="#impressum">Impressum</a></li>
-            <li><a href="#agb">AGB</a></li>
-            <li><a href="#datenschutz">Datenschutzerklärung</a></li>
-        </ul>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5X292NMP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="site-header" style="display: flex; align-items: center; justify-content: space-between; padding: 20px;">
+        <div class="center">
+            <img src="images/Logo.svg" width="40px" alt="FireFrameStudios" class="site-logo">
+        </div>
+        <div class="right">
+            <ul class="header-menu" style="list-style: none; padding: 0; margin: 0; display: flex;">
+                <li class="header-menu-item" style="margin-right: 20px;"><button class="header-menu-link" data-modal-toggler="about" style="border: none; background: none;">About</button></li>
+                <li class="header-menu-item"><button class="header-menu-link" data-modal-toggler="contact" style="border: none; background: none;">Contact</button></li>
+            </ul>
+        </div>
+    </header>
+    <div class="hero-bg" style="background-color: #f2f2f2;">
+        <video id="hero-vid" muted playsinline autoplay loop class="hero-vid" style="width: 100%;"></video>
+    </div>
+    <div class="hero-area maxwidth-wrapper" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+        <div class="services-list services-list-big" style="text-align: center;">
+            <h1 class="services-list-row heading-s1 gradient-text" style="font-size: 36px; font-weight: bold; color: #000;">
+                <span class="service" style="display: inline-block; padding: 0 10px;">Design </span>
+                <span class="dot" style="display: inline-block; width: 5px; height: 5px; background-color: #000; border-radius: 50%; margin: 0 5px;"></span>
+                <span class="service" style="display: inline-block; padding: 0 10px;">Motion </span>
+                <span class="dot" style="display: inline-block; width: 5px; height: 5px; background-color: #000; border-radius: 50%; margin: 0 5px;"></span>
+                <span class="service" style="display: inline-block; padding: 0 10px;">Animation</span>
+            </h1>
+        </div>
+        <div class="separator" style="border-top: 1px solid #ccc; margin: 20px 0;"></div>
+        <p style="text-align: center; color: #333;">FireFrame Studio is a design studio focused on creating animation and motion graphics.<br>Frame Perfection. Craft Stories.</p>
+        <div class="separator" style="border-top: 1px solid #ccc; margin: 20px 0;"></div>
+        <div class="services-list services-list-small" style="display: flex; justify-content: center;">
+            <ul class="services-list-row" style="list-style: none; padding: 0; margin: 0;">
+                <li class="service" style="margin-right: 20px;">Creative direction</li>
+                <li class="service" style="margin-right: 20px;">Story development</li>
+                <li class="service" style="margin-right: 20px;">Character design</li>
+                <li class="service" style="margin-right: 20px;">Motion graphics</li>
+                <li class="service" style="margin-right: 20px;">Animation production</li>
+                <li class="service" style="margin-right: 20px;">Sound design</li>
+            </ul>
+        </div>
+    </div>
+    <footer class="site-footer" style="background-color: #333; color: #fff; padding: 20px;">
+        <div class="maxwidth-wrapper" style="max-width: 1200px; margin: 0 auto;">
+            <p style="text-align: center;">© 2024 FireFrame Studios</p>
+        </div>
     </footer>
-    <script>
-        function showHomeMessage() {
-            alert("GEH NACH HAUSE DU KEK");
-        }
-        function showContactMessage() {
-            alert("WIR WOLLEN KEINEN KONTAKT ZU IHNEN WIR SIND INTROVERTIERT");
-        }
-        function showAboutMessage() {
-            alert("Wir wollen nichts von dir wissen und du auch nicht über uns, sein einfach ehrlich");
-        }
-    </script>
 </body>
 </html>
